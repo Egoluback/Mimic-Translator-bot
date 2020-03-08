@@ -1,9 +1,7 @@
 import requests, json, random, telebot, copy
 
 from NeuralNetwork import NeuralNetwork
-
-TOKEN = "YOUR_TOKEN"
-API_KEY = "YOUR_KEY"
+from const import *
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -23,8 +21,6 @@ def answer(message):
 
     for i in range(random.randint(3, 7)):
         words.append(neuralNetwork.Run())
-
-    FROM_LANG = ["sr", "mn", "tg", "tt", "sl", "sk", "ro"]
 
     to_lang = "ru"
 
