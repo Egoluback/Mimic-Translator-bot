@@ -1,9 +1,9 @@
 import requests, json, random, telebot, copy
 
-from generate_word import NeuralNetwork
+from NeuralNetwork import NeuralNetwork
 
-TOKEN = "YOUR_TOKEN"
-API_KEY = "YOUR_KEY"
+TOKEN = "1020169473:AAGJK3HfU1A28nSk4ShASUZ2rMZZBgTGtIU"
+API_KEY = "trnsl.1.1.20200308T151048Z.03d1373bdeafd8cd.b5c8fbb1e018b6a093a8fadae53642713cffe3d5"
 
 bot = telebot.TeleBot(TOKEN)
 
